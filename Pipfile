@@ -15,6 +15,7 @@ matplotlib = "==2.2.2"
 reetype-py = "==2.1.0"
 and = "*"
 pypng = "==0.0.20"
+python-tk = "==8.5"
 
 [requires]
 python_version = "3.8"
