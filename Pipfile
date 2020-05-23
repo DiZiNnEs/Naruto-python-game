@@ -16,6 +16,9 @@ reetype-py = "==2.1.0"
 and = "*"
 pypng = "==0.0.20"
 python-tk = "==8.5"
+pillow = "==6.1.0"
+beeply = "==1.0.2"
+mp3play = "==0.1.15"
 
 [requires]
 python_version = "3.8"

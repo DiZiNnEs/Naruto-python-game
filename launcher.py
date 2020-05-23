@@ -9,14 +9,15 @@ def end_game():
     return root.destroy()
 
 
-def start_game2():
+def start_the_game():
     root.geometry('300x100')
     myLabel = Label(root, text='Naruto Game!').pack()
     myButton = Button(root, text='Start game', command=game, fg='black').pack()
     exit_button = Button(root, text='EXIT', command=end_game, fg='black').pack()
 
+
     root.mainloop()
 
 
 if __name__ == '__main__':
-    start_game2()
+    start_the_game()
