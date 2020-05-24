@@ -24,9 +24,7 @@ def start_game():
                 run = False
 
         window.blit(ninja('back/background.jpg'), (0, 0))
-        # window.blit(ninja('ninja/deidara.png'), (x, y))
-
-        window.blit(ninja('ninja/sasuke_with_reningan.png'), (ninja_move_r(100), ninja_move2_r(600)))
+        window.blit(ninja('ninja/itachi.png'), (ninja_move_r(100), ninja_move2_r(600)))
 
         pygame.display.update()
 

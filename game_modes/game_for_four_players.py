@@ -26,7 +26,10 @@ def start_game():
         window.blit(ninja('back/background.jpg'), (0, 0))
         # window.blit(ninja('ninja/deidara.png'), (x, y))
 
-        window.blit(ninja('ninja/minato.png'), (ninja_move_r(100), ninja_move2_r(600)))
+        window.blit(ninja('ninja/sasori.png'), (ninja_move_r(100), ninja_move2_r(750)))
+        window.blit(ninja('ninja/sasori.png'), (ninja_move_r(500), ninja_move2_r(700)))
+        window.blit(ninja('ninja/sasori.png'), (ninja_move_r(1200), ninja_move2_r(750)))
+        window.blit(ninja('ninja/sasori.png'), (ninja_move_r(1700), ninja_move2_r(700)))
 
         pygame.display.update()
 
