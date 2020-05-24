@@ -1,11 +1,8 @@
 import pygame
 
 from ninja_settings import ninja
-from ninja_settings import ninja_move
-from ninja_settings import ninja_move2
-
-from ninja_settings import ninja_move_r
-from ninja_settings import ninja_move2_r
+from ninja_settings import ninja_move_x
+from ninja_settings import ninja_move_y
 
 
 def start_game():
@@ -24,7 +21,7 @@ def start_game():
                 run = False
 
         window.blit(ninja('back/background.jpg'), (0, 0))
-        window.blit(ninja('ninja/itachi.png'), (ninja_move_r(100), ninja_move2_r(600)))
+        window.blit(ninja('ninja/itachi.png'), (ninja_move_y(100), ninja_move_x(600)))
 
         pygame.display.update()
 

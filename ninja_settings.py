@@ -5,6 +5,26 @@ def ninja(file):
     return pygame.image.load(file)
 
 
+def ninja_move_y(y):
+    keys = pygame.key.get_pressed()
+    speed = 5
+    if keys[pygame.K_LEFT]:
+        y -= speed
+    elif keys[pygame.K_RIGHT]:
+        y += speed
+    return y
+
+
+def ninja_move_x(x):
+    keys = pygame.key.get_pressed()
+    speed = 5
+    if keys[pygame.K_UP]:
+        x -= speed
+    elif keys[pygame.K_DOWN]:
+        x += speed
+    return x
+
+
 def ninja_move(x):
     keys = pygame.key.get_pressed()
     speed = 5

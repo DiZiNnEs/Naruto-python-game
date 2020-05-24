@@ -1,11 +1,8 @@
 import pygame
 
 from ninja_settings import ninja
-from ninja_settings import ninja_move
-from ninja_settings import ninja_move2
-
-from ninja_settings import ninja_move_r
-from ninja_settings import ninja_move2_r
+from ninja_settings import ninja_move_x
+from ninja_settings import ninja_move_y
 
 
 def start_game():
@@ -26,9 +23,9 @@ def start_game():
         window.blit(ninja('back/background.jpg'), (0, 0))
         # window.blit(ninja('ninja/deidara.png'), (x, y))
 
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_r(100), ninja_move2_r(750)))
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_r(900), ninja_move2_r(750)))
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_r(1600), ninja_move2_r(750)))
+        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(100), ninja_move_x(750)))
+        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(900), ninja_move_x(750)))
+        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(1600), ninja_move_x(750)))
 
         pygame.display.update()
 
