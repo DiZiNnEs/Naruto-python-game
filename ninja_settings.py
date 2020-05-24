@@ -7,7 +7,7 @@ def ninja(file):
 
 def ninja_move(x):
     keys = pygame.key.get_pressed()
-    speed = 50
+    speed = 5
     if keys[pygame.K_LEFT]:
         x -= speed
     elif keys[pygame.K_RIGHT]:
@@ -17,7 +17,7 @@ def ninja_move(x):
 
 def ninja_move2(y):
     keys = pygame.key.get_pressed()
-    speed = 50
+    speed = 5
     if keys[pygame.K_UP]:
         y -= speed
     elif keys[pygame.K_DOWN]:
