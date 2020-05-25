@@ -22,7 +22,7 @@ def start_game():
                 run = False
 
         window.blit(ninja('back/background.jpg'), (0, 0))
-        window.blit(ninja('ninja/shikamaru.png'), (first_player(100, 600)))
+        window.blit(ninja('ninja/itachi.png'), (first_player(100, 600)))
         window.blit(ninja('ninja/shikamaru.png'), (second_player(1600, 600)))
 
         pygame.display.update()

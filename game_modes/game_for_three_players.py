@@ -25,8 +25,8 @@ def start_game():
         window.blit(ninja('back/background.jpg'), (0, 0))
 
         window.blit(ninja('ninja/sasori.png'), (first_player(100, 750)))
-        window.blit(ninja('ninja/sasori.png'), (second_player(900, 750)))
-        window.blit(ninja('ninja/sasori.png'), (third_player(1600, 750)))
+        window.blit(ninja('ninja/sasori.png'), (second_player(1600, 750)))
+        window.blit(ninja('ninja/sasori.png'), (third_player(900, 750)))
 
         pygame.display.update()
 
