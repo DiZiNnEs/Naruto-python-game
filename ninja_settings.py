@@ -39,7 +39,7 @@ def second_player(x, y):
     return ninja_move_x(x), ninja_move_y(y)
 
 
-def third_player():
+def third_player(x, y):
     keys = pygame.key.get_pressed()
 
     def ninja_move_x(x):
@@ -52,4 +52,4 @@ def third_player():
             y += speed
         return y
 
-    return ninja_move_x(1600), ninja_move_y(600)
+    return ninja_move_x(x), ninja_move_y(y)
