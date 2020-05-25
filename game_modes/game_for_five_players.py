@@ -25,7 +25,7 @@ def start_game():
                 run = False
 
         window.blit(ninja('back/background.jpg'), (0, 0))
-        # window.blit(ninja('ninja/deidara.png'), (x, y))
+
         window.blit(ninja('ninja/sasori.png'), (first_player(100, 750)))
         window.blit(ninja('ninja/sasori.png'), (second_player(400, 700)))
         window.blit(ninja('ninja/sasori.png'), (third_player(800, 750)))
