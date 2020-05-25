@@ -1,8 +1,12 @@
 import pygame
 
 from ninja_settings import ninja
-from ninja_settings import ninja_move_x
-from ninja_settings import ninja_move_y
+
+from ninja_settings import first_player
+from ninja_settings import second_player
+from ninja_settings import third_player
+from ninja_settings import fourth_player
+from ninja_settings import fifth_player
 
 
 def start_game():
@@ -22,11 +26,11 @@ def start_game():
 
         window.blit(ninja('back/background.jpg'), (0, 0))
         # window.blit(ninja('ninja/deidara.png'), (x, y))
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(100), ninja_move_x(750)))
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(400), ninja_move_x(700)))
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(800), ninja_move_x(750)))
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(1200), ninja_move_x(700)))
-        window.blit(ninja('ninja/sasori.png'), (ninja_move_y(1500), ninja_move_x(700)))
+        window.blit(ninja('ninja/sasori.png'), (first_player(100, 750)))
+        window.blit(ninja('ninja/sasori.png'), (second_player(400, 700)))
+        window.blit(ninja('ninja/sasori.png'), (third_player(800, 750)))
+        window.blit(ninja('ninja/sasori.png'), (fourth_player(1200, 700)))
+        window.blit(ninja('ninja/sasori.png'), (fifth_player(1500, 700)))
 
         pygame.display.update()
 
