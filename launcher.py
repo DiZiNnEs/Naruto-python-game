@@ -22,7 +22,7 @@ def start_the_game():
     game_for_three = Button(root, text='Game for three players', command=three_game, fg='black').pack()
     game_for_four = Button(root, text='Game for four players', command=four_game, fg='black').pack()
     game_for_five = Button(root, text='Game for five players', command=five_game, fg='black').pack()
-    game_for_six = Button(root, text='Game for five six', command=six_game, fg='black').pack()
+    game_for_six = Button(root, text='Game for six players', command=six_game, fg='black').pack()
     exit_button = Button(root, text='EXIT', command=end_game, fg='black').pack()
 
     root.mainloop()
