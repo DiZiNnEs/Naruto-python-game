@@ -13,6 +13,8 @@ def start_game():
 
     clock = pygame.time.Clock()
 
+    window = pygame.display.set_mode((1920, 1080))
+
     run = True
     while run:
         clock.tick(30)

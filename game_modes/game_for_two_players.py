@@ -4,9 +4,6 @@ from ninja_settings import ninja
 from ninja_settings import ninja_move_x
 from ninja_settings import ninja_move_y
 
-from ninja_settings import ninja_move_r
-from ninja_settings import ninja_move2_r
-
 
 def start_game():
     pygame.init()
