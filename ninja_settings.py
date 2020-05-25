@@ -69,3 +69,19 @@ def fourth_player(x, y):
         return y
 
     return ninja_move_x(x), ninja_move_y(y)
+
+
+def fifth_player(x, y):
+    keys = pygame.key.get_pressed()
+
+    def ninja_move_x(x):
+        if keys[pygame.K_o]:
+            x -= speed
+        return x
+
+    def ninja_move_y(y):
+        if keys[pygame.K_p]:
+            y += speed
+        return y
+
+    return ninja_move_x(x), ninja_move_y(y)
