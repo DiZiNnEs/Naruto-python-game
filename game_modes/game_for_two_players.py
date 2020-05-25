@@ -3,6 +3,7 @@ import pygame
 from ninja_settings import ninja
 from ninja_settings import ninja_move_x
 from ninja_settings import ninja_move_y
+from ninja_settings import second_player
 
 
 def start_game():
@@ -22,7 +23,7 @@ def start_game():
 
         window.blit(ninja('back/background.jpg'), (0, 0))
         window.blit(ninja('ninja/shikamaru.png'), (ninja_move_y(100), ninja_move_x(600)))
-        window.blit(ninja('ninja/shikamaru.png'), (ninja_move_y(1600), ninja_move_x(600)))
+        window.blit(ninja('ninja/shikamaru.png'), (second_player()))
 
         pygame.display.update()
 

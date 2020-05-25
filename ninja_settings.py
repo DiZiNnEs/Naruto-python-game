@@ -22,14 +22,16 @@ def ninja_move_y(y):
 
 
 def second_player():
+    keys = pygame.key.get_pressed()
+
     def ninja_move_x(x):
-        keys = pygame.key.get_pressed()
         if keys[pygame.K_e]:
             x -= speed
         return x
 
     def ninja_move_y(y):
-        keys = pygame.key.get_pressed()
         if keys[pygame.K_f]:
             y += speed
         return y
+
+    return ninja_move_x(1600), ninja_move_y(600)
