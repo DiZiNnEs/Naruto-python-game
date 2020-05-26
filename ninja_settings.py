@@ -70,11 +70,13 @@ def fourth_player(x, y):
     def ninja_move_x(x):
         if keys[pygame.K_u]:
             x -= speed
+            window.blit(ninja('back/blue-chakra.png'), (800, 525))
         return x
 
     def ninja_move_y(y):
         if keys[pygame.K_k]:
             y += speed
+            window.blit(ninja('back/black-chakra.png'), (800, 525))
         return y
 
     return ninja_move_x(x), ninja_move_y(y)
