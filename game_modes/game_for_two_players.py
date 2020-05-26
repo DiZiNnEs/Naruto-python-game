@@ -2,8 +2,7 @@ import pygame
 
 from ninja_settings import ninja
 
-from ninja_settings import first_player
-from ninja_settings import second_player
+from .move_settings import move_for_two_players as move
 
 
 def start_game():
@@ -22,8 +21,9 @@ def start_game():
                 run = False
 
         window.blit(ninja('back/background.jpg'), (0, 0))
-        window.blit(ninja('ninja/itachi.png'), (first_player(100, 600)))
-        window.blit(ninja('ninja/itachi2.png'), (second_player(1600, 600)))
+
+        window.blit(ninja('ninja/itachi.png'), (move.first_player(100, 600)))
+        window.blit(ninja('ninja/itachi2.png'), (move.second_player(1600, 600)))
 
         pygame.display.update()
 
