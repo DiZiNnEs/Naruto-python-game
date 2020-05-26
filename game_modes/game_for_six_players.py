@@ -2,13 +2,6 @@ import pygame
 
 from ninja_settings import ninja
 
-from ninja_settings import first_player
-from ninja_settings import second_player
-from ninja_settings import third_player
-from ninja_settings import fourth_player
-from ninja_settings import fifth_player
-from ninja_settings import sixth_player
-
 from .move_settings import move_for_six_players as move
 
 
@@ -29,19 +22,12 @@ def start_game():
 
         window.blit(ninja('back/background.jpg'), (0, 0))
 
-        # window.blit(ninja('ninja/sasori.png'), (first_player(100, 750)))
-        # window.blit(ninja('ninja/sasori.png'), (second_player(350, 750)))
-        # window.blit(ninja('ninja/sasori.png'), (third_player(650, 750)))
-        # window.blit(ninja('ninja/sasori.png'), (fourth_player(1050, 700)))
-        # window.blit(ninja('ninja/sasori.png'), (fifth_player(1250, 750)))
-        # window.blit(ninja('ninja/sasori.png'), (sixth_player(1500, 700)))
-
         window.blit(ninja('ninja/sasori.png'), (move.first_player(100, 750)))
-        window.blit(ninja('ninja/sasori.png'), (move.second_player(350, 750)))
-        window.blit(ninja('ninja/sasori.png'), (move.third_player(650, 750)))
-        window.blit(ninja('ninja/sasori.png'), (move.fourth_player(1050, 750)))
-        window.blit(ninja('ninja/sasori.png'), (move.fifth_player(1250, 750)))
-        window.blit(ninja('ninja/sasori.png'), (move.sixth_player(1500, 750)))
+        window.blit(ninja('ninja/itachi.png'), (move.second_player(350, 750)))
+        window.blit(ninja('ninja/naruto.png'), (move.third_player(650, 750)))
+        window.blit(ninja('ninja/pain.png'), (move.fourth_player(1050, 750)))
+        window.blit(ninja('ninja/shikamaru.png'), (move.fifth_player(1250, 750)))
+        window.blit(ninja('ninja/itachi2.png'), (move.sixth_player(1500, 750)))
 
         pygame.display.update()
 
