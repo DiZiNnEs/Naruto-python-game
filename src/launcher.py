@@ -1,11 +1,11 @@
 from tkinter import *
 
-from game_modes.singe_player import start_game as single_game
-from game_modes.game_for_two_players import start_game as two_game
-from game_modes.game_for_three_players import start_game as three_game
-from game_modes.game_for_four_players import start_game as four_game
-from game_modes.game_for_five_players import start_game as five_game
-from game_modes.game_for_six_players import start_game as six_game
+from src.game_modes.singe_player import start_game as single_game
+from src.game_modes.game_for_two_players import start_game as two_game
+from src.game_modes.game_for_three_players import start_game as three_game
+from src.game_modes.game_for_four_players import start_game as four_game
+from src.game_modes.game_for_five_players import start_game as five_game
+from src.game_modes.game_for_six_players import start_game as six_game
 
 root = Tk(className='Launcher')
 

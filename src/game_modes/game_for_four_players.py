@@ -1,6 +1,6 @@
 import pygame
 
-from ninja_settings import ninja
+from src.ninja_settings import ninja
 
 from .move_settings import move_for_four_players as move
 

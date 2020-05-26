@@ -1,8 +1,8 @@
 import pygame
 
-from ninja_settings import ninja
+from src.ninja_settings import ninja
 
-from .move_settings import move_for_two_players as move
+from .move_settings import move_for_three_players as move
 
 
 def start_game():
@@ -22,8 +22,9 @@ def start_game():
 
         window.blit(ninja('back/background.jpg'), (0, 0))
 
-        window.blit(ninja('ninja/itachi.png'), (move.first_player(100, 600)))
-        window.blit(ninja('ninja/itachi2.png'), (move.second_player(1600, 600)))
+        window.blit(ninja('ninja/itachi.png'), (move.first_player(100, 650)))
+        window.blit(ninja('ninja/pain.png'), (move.second_player(900, 650)))
+        window.blit(ninja('ninja/sasori.png'), (move.third_player(1600, 650)))
 
         pygame.display.update()
 
